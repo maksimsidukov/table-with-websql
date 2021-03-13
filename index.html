@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <button id="drop_table_button" class="btn btn-primary">Удалить таблицу</button>
+            </div>
+            <div class="col-sm">
+                <button id="create_table_button" class="btn btn-primary">Создать таблицу</button>
+            </div>
+            <div class="col-sm">
+                <button id="create_random_data_button" class="btn btn-primary">Добавить тестовые данные</button>
+            </div>
+            <div class="col-sm">
+                <button id="update_table_button" class="btn btn-primary">Обновить таблицу</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="start_date">
+                    <label for="start_date">Дата с:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="end_date">
+                    <label for="end_date">Дата до:</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="supplier">
+            <label for="supplier">Наименование поставщика</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="warehouse">
+            <label for="warehouse">Склад приемки</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="product_name">
+            <label for="product_name">Наименование товара</label>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="start_count">
+                    <label for="start_count">Количество от:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="end_count">
+                    <label for="end_count">Количество до:</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="start_summ">
+                    <label for="start_summ">Сумма от:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="end_summ">
+                    <label for="end_summ">Сумма до:</label>
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Дата</th>
+                <th scope="col">Наименование поставщика</th>
+                <th scope="col">Склад приемки</th>
+                <th scope="col">Наименование товара</th>
+                <th scope="col">Количество</th>
+                <th scope="col">Сумма</th>
+            </tr>
+            </thead>
+            <tbody id="table_body">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
